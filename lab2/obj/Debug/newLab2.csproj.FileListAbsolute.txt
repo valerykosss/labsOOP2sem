@@ -1,0 +1,10 @@
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\bin\Debug\newLab2.exe.config
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\bin\Debug\newLab2.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\bin\Debug\newLab2.pdb
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.csprojAssemblyReference.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.Form1.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.Properties.Resources.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.csproj.GenerateResource.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.csproj.CoreCompileInputs.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab2\newLab2\obj\Debug\newLab2.pdb

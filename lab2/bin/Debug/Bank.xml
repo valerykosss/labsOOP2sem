@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfBankAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BankAccount>
+    <DepositNumber>123</DepositNumber>
+    <DepositType>Расчетные</DepositType>
+    <Balance>100</Balance>
+    <AccountCreationDate>2022-02-23T02:56:12.528678+03:00</AccountCreationDate>
+    <OwnerInfo>
+      <Name>qaz</Name>
+      <Surname>qaz</Surname>
+      <MiddleName>qaz</MiddleName>
+      <PassportInfo>qwe</PassportInfo>
+      <DateBirth>2022-02-23T02:56:12.5226938+03:00</DateBirth>
+    </OwnerInfo>
+    <ResultInfo>qaz qaz qaz; счет:123(от23.02.2022 2:56:12) Расчетные; сумма:100$ ; смс-оповещения; интеренет-банкинг</ResultInfo>
+  </BankAccount>
+  <BankAccount>
+    <DepositNumber>123</DepositNumber>
+    <DepositType>Расчетные</DepositType>
+    <Balance>100</Balance>
+    <AccountCreationDate>2022-02-23T02:56:12.528678+03:00</AccountCreationDate>
+    <OwnerInfo>
+      <Name>qaz</Name>
+      <Surname>qaz</Surname>
+      <MiddleName>qaz</MiddleName>
+      <PassportInfo>qwe</PassportInfo>
+      <DateBirth>2022-02-23T02:56:12.5226938+03:00</DateBirth>
+    </OwnerInfo>
+    <ResultInfo>qaz qaz qaz; счет:123(от23.02.2022 2:56:12) Расчетные; сумма:100$ ; смс-оповещения; интеренет-банкинг</ResultInfo>
+  </BankAccount>
+</ArrayOfBankAccount>
