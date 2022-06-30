@@ -1,0 +1,38 @@
+﻿<Window x:Class="Lab_10.WriteMessage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_10"
+        mc:Ignorable="d"
+        Title="WriteMessage" Height="500" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Vertical">
+                <Button Click="Write_Click" Content="Write" Width="50" Margin="10"/>
+                <TextBox x:Name="MessageText" Width="250" Margin="25 0"/>
+            </StackPanel>
+
+            <StackPanel x:Name="UserInfo" HorizontalAlignment="Right" VerticalAlignment="Center" Orientation="Horizontal">
+                <Image Width="50" Source="{Binding Path=Avatar}"/>
+                <StackPanel Orientation="Vertical" Margin="10">
+                    <TextBlock Text="{Binding Path=Name}"/>
+                    <TextBlock Text="{Binding Path=Surname}"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <DataGrid x:Name="UsersGrid" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Id" Binding="{Binding Path=Id}" Width="50"/>
+                    <DataGridTextColumn Header="Name" Binding="{Binding Path=Name}" Width="*"/>
+                    <DataGridTextColumn Header="Surname" Binding="{Binding Path=Surname}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>
