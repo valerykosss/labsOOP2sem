@@ -1,0 +1,132 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:lab7">
+    <!--Play Button Default-->
+
+    <Geometry x:Key="PlayGeometry1">F0 M27371,27371z M0,0z M10184,9742L10184,17618C10184,18325 11138,19113 12135,18604 12230,18555 12294,18508 12384,18458L15650,16538C15820,16432 15979,16349 16149,16247 16317,16146 16472,16051 16645,15954 16818,15857 16976,15763 17142,15661L18652,14775C19403,14313 19460,13444 19009,12936 18845,12751 18677,12647 18474,12526L14866,10395C14659,10275 14470,10167 14269,10044 13866,9797 12119,8736 11837,8657 10975,8415 10183,9087 10183,9743z</Geometry>
+    <Geometry x:Key="PlayGeometry2">F0 M27371,27371z M0,0z M13685,0C21243,0 27370,6127 27370,13685 27370,21243 21243,27370 13685,27370 6127,27370 0,21243 0,13685 0,6127 6127,0 13685,0z M13685,2595C19810,2595 24775,7560 24775,13685 24775,19810 19810,24775 13685,24775 7560,24775 2595,19810 2595,13685 2595,7560 7560,2595 13685,2595z</Geometry>
+    <DrawingGroup x:Key="PlayDrawingGroup"
+                  ClipGeometry="M0,0 V27371 H27371 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="#FFFFFFFF"
+                                 Geometry="{StaticResource PlayGeometry1}" />
+                <GeometryDrawing Brush="#FF37ABD2"
+                                 Geometry="{StaticResource PlayGeometry2}" />
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Play_Def" Drawing="{StaticResource PlayDrawingGroup}" />
+
+    <!--Play Button Mouse Over-->
+
+    <Geometry x:Key="Play_MOGeometry1">F0 M27795,27795z M0,0z M10342,9893L10342,17891C10342,18609 11310,19409 12324,18892 12420,18843 12485,18795 12577,18744L15894,16794C16067,16686 16228,16602 16401,16499 16572,16397 16729,16300 16905,16201 17080,16102 17241,16007 17410,15904L18943,15004C19705,14535 19763,13652 19306,13137 19139,12949 18969,12844 18763,12721L15099,10557C14889,10435 14697,10325 14493,10200 14084,9949 12310,8872 12023,8792 11147,8546 10343,9229 10343,9895z</Geometry>
+    <Geometry x:Key="Play_MOGeometry2">F0 M27795,27795z M0,0z M13898,0C21573,0 27796,6222 27796,13898 27796,21573 21574,27796 13898,27796 6223,27796 0,21574 0,13898 0,6223 6222,0 13898,0z M13898,2636C20118,2636 25160,7678 25160,13898 25160,20118 20118,25160 13898,25160 7678,25160 2636,20118 2636,13898 2636,7678 7678,2636 13898,2636z</Geometry>
+    <DrawingGroup x:Key="Play_MODrawingGroup"
+                  ClipGeometry="M0,0 V27795 H27795 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="#FF37ABD2"
+                                 Geometry="{StaticResource Play_MOGeometry1}" />
+                <GeometryDrawing Brush="#FFFFFFFF"
+                                 Geometry="{StaticResource Play_MOGeometry2}" />
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Play_Mo"
+                  Drawing="{StaticResource Play_MODrawingGroup}" />
+
+    <!--Stop Button Default-->
+
+    <Geometry x:Key="Stop_DefGeometry1">F0 M35045,35045z M0,0z M11017,12690L11017,22354C11017,23272,11771,24027,12690,24027L22354,24027C23272,24027,24027,23273,24027,22354L24027,12690C24027,11772,23273,11017,22354,11017L12690,11017C11772,11017,11017,11771,11017,12690z</Geometry>
+    <Geometry x:Key="Stop_DefGeometry2">F0 M35045,35045z M0,0z M17522,0C27199,0 35045,7845 35045,17522 35045,27199 27200,35045 17522,35045 7845,35045 0,27200 0,17522 0,7845 7845,0 17522,0z M17522,3323C25365,3323 31722,9680 31722,17522 31722,25365 25365,31722 17522,31722 9680,31722 3323,25365 3323,17522 3323,9680 9680,3323 17522,3323z</Geometry>
+    <DrawingGroup x:Key="Stop_DefDrawingGroup"
+                  ClipGeometry="M0,0 V35045 H35045 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="#FFFFFFFF"
+                                 Geometry="{StaticResource Stop_DefGeometry1}" />
+                <GeometryDrawing Brush="#FF37ABD2"
+                                 Geometry="{StaticResource Stop_DefGeometry2}" />
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Stop_Def" Drawing="{StaticResource Stop_DefDrawingGroup}" />
+
+    <!--Stop Button Mouse Over-->
+
+    <Geometry x:Key="Stop_MoGeometry1">F0 M11639,11639z M0,0z M3659,4215L3659,7425C3659,7730,3909,7981,4215,7981L7425,7981C7730,7981,7981,7731,7981,7425L7981,4215C7981,3910,7731,3659,7425,3659L4215,3659C3910,3659,3659,3909,3659,4215z</Geometry>
+    <Geometry x:Key="Stop_MoGeometry2">F0 M11639,11639z M0,0z M5819,0C9033,0 11639,2606 11639,5819 11639,9033 9033,11639 5819,11639 2605,11639 0,9033 0,5819 0,2605 2606,0 5819,0z M5819,1104C8424,1104 10535,3215 10535,5820 10535,8425 8424,10536 5819,10536 3214,10536 1103,8425 1103,5820 1103,3215 3214,1104 5819,1104z</Geometry>
+    <DrawingGroup x:Key="Stop_MoDrawingGroup"
+                  ClipGeometry="M0,0 V11639 H11639 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="#FF37ABD2"
+                                 Geometry="{StaticResource Stop_MoGeometry1}" />
+                <GeometryDrawing Brush="#FFFFFFFF"
+                                 Geometry="{StaticResource Stop_MoGeometry2}" />
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Stop_Mo" Drawing="{StaticResource Stop_MoDrawingGroup}" />
+
+    <!--Power Button-->
+
+    <Geometry x:Key="PowerGeometry1">F0 M68925,76310z M0,0z M50892,11546C49100,10573 46858,11236 45885,13028 44912,14820 45575,17062 47367,18035 56110,22784 61540,31908 61540,41847 61540,56778 49393,68925 34462,68925 19531,68925 7384,56778 7384,41847 7384,31952 12780,22847 21467,18085 23255,17105 23910,14860 22930,13072 21950,11284 19705,10629 17917,11609 6865,17668 0,29254 0,41847 0,60850 15460,76310 34463,76310 53466,76310 68926,60850 68926,41847 68926,29199 62016,17588 50893,11546z</Geometry>
+    <Geometry x:Key="PowerGeometry2">F0 M68925,76310z M0,0z M34463,32001C36502,32001,38156,30348,38156,28309L38156,3693C38156,1654 36503,0 34463,0 32424,0 30770,1653 30770,3693L30770,28309C30770,30348,32423,32001,34463,32001z</Geometry>
+    <DrawingGroup x:Key="PowerDrawingGroup"
+                  ClipGeometry="M0,0 V76310 H68925 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <DrawingGroup Opacity="1">
+                    <GeometryDrawing Brush="#FFFEF200"
+                                     Geometry="{StaticResource PowerGeometry1}" />
+                    <GeometryDrawing Brush="#FFFEF200"
+                                     Geometry="{StaticResource PowerGeometry2}" />
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Power_Off" Drawing="{StaticResource PowerDrawingGroup}" />
+
+    <Geometry x:Key="Power_RedGeometry1">F0 M65183,72166z M0,0z M48128,10919C46433,9999 44313,10626 43393,12321 42472,14016 43100,16136 44795,17056 53063,21547 58199,30176 58199,39575 58199,53695 46712,65183 32592,65183 18472,65183 6984,53695 6984,39575 6984,30217 12087,21606 20302,17103 21993,16176 22612,14053 21685,12362 20758,10671 18635,10051 16944,10979 6493,16709 0,27666 0,39575 0,57546 14620,72166 32591,72166 50562,72166 65182,57546 65182,39575 65182,27614 58647,16634 48128,10919z</Geometry>
+    <Geometry x:Key="Power_RedGeometry2">F0 M65183,72166z M0,0z M32591,30263C34519,30263,36083,28700,36083,26771L36083,3492C36083,1563 34519,0 32591,0 30663,0 29099,1563 29099,3492L29099,26771C29099,28699,30663,30263,32591,30263z</Geometry>
+    <DrawingGroup x:Key="Power_RedDrawingGroup"
+                  ClipGeometry="M0,0 V72166 H65183 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <DrawingGroup Opacity="1">
+                    <GeometryDrawing Brush="#FFFF0000"
+                                     Geometry="{StaticResource Power_RedGeometry1}" />
+                    <GeometryDrawing Brush="#FFFF0000"
+                                     Geometry="{StaticResource Power_RedGeometry2}" />
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Power_Red" Drawing="{StaticResource Power_RedDrawingGroup}" />
+    <Geometry x:Key="Power_WhiteGeometry1">F0 M68925,76310z M0,0z M50892,11546C49100,10573 46858,11236 45885,13028 44912,14820 45575,17062 47367,18035 56110,22784 61540,31908 61540,41847 61540,56778 49393,68925 34462,68925 19531,68925 7384,56778 7384,41847 7384,31952 12780,22847 21467,18085 23255,17105 23910,14860 22930,13072 21950,11284 19705,10629 17917,11609 6865,17668 0,29254 0,41847 0,60850 15460,76310 34463,76310 53466,76310 68926,60850 68926,41847 68926,29199 62016,17588 50893,11546z</Geometry>
+    <Geometry x:Key="Power_WhiteGeometry2">F0 M68925,76310z M0,0z M34463,32001C36502,32001,38156,30348,38156,28309L38156,3693C38156,1654 36503,0 34463,0 32424,0 30770,1653 30770,3693L30770,28309C30770,30348,32423,32001,34463,32001z</Geometry>
+    <DrawingGroup x:Key="Power_WhiteDrawingGroup"
+                  ClipGeometry="M0,0 V76310 H68925 V0 H0 Z">
+        <DrawingGroup Opacity="1">
+            <DrawingGroup Opacity="1">
+                <DrawingGroup Opacity="1">
+                    <GeometryDrawing Brush="#FFFFFFFF"
+                                     Geometry="{StaticResource Power_WhiteGeometry1}" />
+                    <GeometryDrawing Brush="#FFFFFFFF"
+                                     Geometry="{StaticResource Power_WhiteGeometry2}" />
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingGroup>
+    </DrawingGroup>
+
+    <DrawingImage x:Key="Power_White" Drawing="{StaticResource Power_WhiteDrawingGroup}" />
+
+</ResourceDictionary>
