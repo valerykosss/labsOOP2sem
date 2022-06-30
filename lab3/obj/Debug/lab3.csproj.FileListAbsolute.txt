@@ -1,0 +1,11 @@
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.csprojAssemblyReference.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.Form1.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.Properties.Resources.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.csproj.GenerateResource.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.csproj.CoreCompileInputs.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\bin\Debug\lab3.exe.config
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\bin\Debug\lab3.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\bin\Debug\lab3.pdb
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.pdb
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab3\lab3\obj\Debug\lab3.Search.resources

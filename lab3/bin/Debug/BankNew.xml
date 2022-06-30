@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<ArrayOfBankAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BankAccount>
+    <DepositNumber>120</DepositNumber>
+    <DepositType>Расчетные</DepositType>
+    <Balance>1000</Balance>
+    <AccountCreationDate>2022-03-16T12:32:18.5718966+03:00</AccountCreationDate>
+    <OwnerInfo>
+      <Name>йй</Name>
+      <Surname>фф</Surname>
+      <MiddleName>яя</MiddleName>
+      <PassportInfo>ky1234567</PassportInfo>
+      <DateBirth>2022-03-16T12:32:18.5230262+03:00</DateBirth>
+    </OwnerInfo>
+    <ResultInfo>фф йй яя; счет:120(от16.03.2022 12:32:18) Расчетные; сумма:1000$ ; смс-оповещения; интеренет-банкинг</ResultInfo>
+  </BankAccount>
+  <BankAccount>
+    <DepositNumber>121</DepositNumber>
+    <DepositType>Расчетные</DepositType>
+    <Balance>1000</Balance>
+    <AccountCreationDate>2022-03-16T12:32:18.5718966+03:00</AccountCreationDate>
+    <OwnerInfo>
+      <Name>ww</Name>
+      <Surname>фф</Surname>
+      <MiddleName>яя</MiddleName>
+      <PassportInfo>ky1234567</PassportInfo>
+      <DateBirth>2022-03-16T12:32:18.5230262+03:00</DateBirth>
+    </OwnerInfo>
+    <ResultInfo>фф ww яя; счет:121(от16.03.2022 12:32:18) Расчетные; сумма:1000$ ; смс-оповещения; интеренет-банкинг</ResultInfo>
+  </BankAccount>
+</ArrayOfBankAccount>
