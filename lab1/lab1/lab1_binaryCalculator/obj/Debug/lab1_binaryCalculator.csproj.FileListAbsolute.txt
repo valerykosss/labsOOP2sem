@@ -1,0 +1,10 @@
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\bin\Debug\lab1_binaryCalculator.exe.config
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\bin\Debug\lab1_binaryCalculator.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\bin\Debug\lab1_binaryCalculator.pdb
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.csprojAssemblyReference.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.Form1.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.Properties.Resources.resources
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.csproj.GenerateResource.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.csproj.CoreCompileInputs.cache
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.exe
+E:\2 курс БГТУ\ооп 2 сем\лабы\lab1_binaryCalculator\obj\Debug\lab1_binaryCalculator.pdb
