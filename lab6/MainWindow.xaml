@@ -1,0 +1,118 @@
+﻿<Window x:Class="lab6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:lab6"
+        mc:Ignorable="d"
+        Title="Rich Text Editor" Height="450" Width="800">
+        <Window.CommandBindings>
+            <CommandBinding Command="ApplicationCommands.Open" Executed="Open_Executed" />
+            <CommandBinding Command="ApplicationCommands.Save" Executed="Save_Executed" />
+            <CommandBinding Command="ApplicationCommands.New" Executed="New_Executed" />
+            <CommandBinding Command="ApplicationCommands.Copy" Executed="Copy_Executed" />
+            <CommandBinding Command="ApplicationCommands.Paste" Executed="Paste_Executed" />
+        </Window.CommandBindings>
+    <Window.Resources>
+        
+    </Window.Resources>
+    
+    <Grid Style="{DynamicResource GridTheme}"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" MinHeight="25"></RowDefinition>
+            <RowDefinition  Height="9*" ></RowDefinition>
+            <RowDefinition Height="0.5*"  MinHeight="10"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ToolBar Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Style="{DynamicResource ToolBarBackground}">
+            <Menu x:Name="menu" VerticalAlignment="Center">
+                <MenuItem x:Name="fileMenu" Header="{DynamicResource m_New}" Click="fileMenu_Click">
+                    <MenuItem Click="MenuItem_Click1" Header="{DynamicResource m_OpenNew}" Style="{StaticResource MenuItemMouseOverStyle}"></MenuItem>
+                    <MenuItem Click="MenuItem_Click2" Header="{DynamicResource m_CloseNew}" Style="{StaticResource MenuItemMouseOverStyle}"></MenuItem>
+                    <MenuItem Click="MenuItem_Click3" Header="{DynamicResource m_Save}" Style="{StaticResource MenuItemMouseOverStyle}"></MenuItem>
+                    <MenuItem Click="Undo" Header="{DynamicResource m_Undo}" Style="{StaticResource MenuItemMouseOverStyle}"/>
+                    <MenuItem Click="Redo" Header="{DynamicResource m_Redo}" Style="{StaticResource MenuItemMouseOverStyle}"/>
+                </MenuItem>
+            </Menu>
+            <Button Command="ApplicationCommands.Open" Style="{StaticResource ButtonLoad}">
+                <Image Source="pack://application:,,,/images/folder_icon.png" />
+            </Button>
+            <Button Command="ApplicationCommands.Save" Style="{StaticResource ButtonLoad}">
+                <Image Source="pack://application:,,,/images/disk_icon.png" />
+            </Button>
+            <!--<Button Command="ApplicationCommands.New">
+                <Image Source="pack://application:,,,/images/new_icon.png" Width="16" Height="16" />
+            </Button>-->
+            <Separator />
+            <Button Command="ApplicationCommands.Copy" Style="{StaticResource ButtonLoad}">
+                <Image Source="pack://application:,,,/images/copy_icon.png" />
+            </Button>
+            <Button Command="ApplicationCommands.Paste" Style="{StaticResource ButtonLoad}">
+                <Image Source="pack://application:,,,/images/paste_icon.png" />
+            </Button>
+            <Separator />
+            <ToggleButton Command="EditingCommands.ToggleBold" Name="btnBold">
+                <Image Source="pack://application:,,,/images/bold.png" />
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleItalic" Name="btnItalic">
+                <Image Source="pack://application:,,,/images/italic.png" />
+            </ToggleButton>
+            <ToggleButton Command="EditingCommands.ToggleUnderline" Name="btnUnderline">
+                <Image Source="pack://application:,,,/images/underlined.png" />
+            </ToggleButton>
+            <!-- Binds button to the UndoCommand -->
+            <!--<Button Content="Undo" Name="undobtn"/>-->
+            <!-- Binds button to the RedoCommand -->
+            <!--<Button Content="Redo" Name="unbtn"/>-->
+            <Separator />
+            <ComboBox IsSelected="True" Name="cmbFontFamily" Width="150" SelectionChanged="cmbFontFamily_SelectionChanged"/>
+            <ComboBox Name="colorFont" Width="100" SelectionChanged="colorFont_SelectionChanged">
+                <ComboBoxItem>
+                    <TextBlock Text="Black"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Orange"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Pink"></TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock Text="Blue"></TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+                <!--<ComboBox Name="cmbFontSize" Width="50" IsEditable="True" TextBoxBase.TextChanged="cmbFontSize_TextChanged" />-->
+            <Slider Name="sldrFontSize" Height="20" VerticalAlignment="Center" Width="100" Minimum="10" Maximum="50" ValueChanged="sldrFontSize_ValueChanged"/>
+            <ComboBox Name="interfaceLanguage" Width="47" SelectedIndex="1" FontSize="12" SelectionChanged="interfaceLanguage_SelectionChanged">
+                <System:String>En</System:String>
+                <System:String>Рус</System:String>
+            </ComboBox>
+            <ComboBox Name="selectedTheme"  Width="100" SelectionChanged="theme_Selected" SelectedIndex="0" >
+                <ComboBoxItem Name="Theme1" Content="Розовая"/>
+                <ComboBoxItem Name="Theme2" Content="Желтая"/>
+                <ComboBoxItem Name="Theme3" Content="Зеленая"/>
+            </ComboBox>
+        </ToolBar>
+        <StatusBar Grid.Row="2">
+            <StatusBarItem>
+                <TextBlock><Run Text="{StaticResource countOfWords}"/></TextBlock>
+            </StatusBarItem>
+            <StatusBarItem>
+                <TextBlock Name="lblCursorPosition" />
+            </StatusBarItem>
+            <StatusBarItem HorizontalAlignment="Right">
+                <CheckBox x:Name = "grayColorCheckBox" Content = "Серый фон печатной области" />
+            </StatusBarItem>
+        </StatusBar>
+        <RichTextBox Name="rtbEditor" SelectionChanged="rtbEditor_SelectionChanged" AllowDrop="True" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="60,20,60,20">
+            <RichTextBox.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding = "{Binding ElementName = grayColorCheckBox, Path = IsChecked}" Value = "true">
+                            <Setter Property = "RichTextBox.Background" Value = "LightGray"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </RichTextBox.Style>
+        </RichTextBox>
+    </Grid>
+</Window>
